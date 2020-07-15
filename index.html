@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Simple Screen Record!</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+<div class="col-md-4 offset-md-4 mt-5">
+  <div class="card" style="width: 100%">
+    <div class="card-body">
+      <h2 class="card-title">Screen Record App</h2>
+      <p id="warning">Screen Record App </p>
+<!-- 
+      <p id="uploaded_link" style="display: none;"> <strong id="">Uploaded done</strong> <a id="link">Click me to find
+          Video</a> </p>
+      <h4 id="st"></h4> -->
+      <div class="time">
+        <div class="timeHolder">
+          <span id="hour">00</span>
+          <span> : </span>
+          <span id="minute">00</span>
+          <span> : </span>
+          <span id="second">00</span>
+        </div>
+      </div>
+      <div class="recorderComponent">
+        <video style="display: none;" id="videoElement" autoplay muted></video>
+        <!-- <p>Preview</p> -->
+        <div class="btnHolder">
+          <button id="captureBtn" class=" btn btn-success mr-3">Start</button>
+          <button class=" btn btn-success mr-3" style="display: none;" id="startBtn">Start </button>
+          <button class=" btn btn-danger mr-3" style="display: none;" id="stopBtn" disabled>Stop </button>
+          <button  class=" btn btn-warning mr-3" style="display: none;" id="puseBtn">puse </button>
+          <button class=" btn btn-warning mr-3" style="display: none;" id="resumeBtn"> resume </button>
+          <a id="download" href="#" style="display: none;">
+            <button>Download</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="./axios.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
